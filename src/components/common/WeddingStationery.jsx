@@ -255,26 +255,26 @@ const WeddingStationeryCatalogue = () => {
       </div>
 
       {/* Features Bar */}
-      <div className="bg-gradient-to-r from-purple-50 to-pink-50 py-8">
+      <div className="bg-gradient-to-r from-yellow-50 to-pink-50 py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <Truck className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+              <Truck className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
               <div className="font-bold">Free Delivery</div>
               <div className="text-sm text-gray-600">Over ₹5,000</div>
             </div>
             <div className="text-center">
-              <Shield className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+              <Shield className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
               <div className="font-bold">Quality Guarantee</div>
               <div className="text-sm text-gray-600">100% Satisfaction</div>
             </div>
             <div className="text-center">
-              <Palette className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+              <Palette className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
               <div className="font-bold">Custom Designs</div>
               <div className="text-sm text-gray-600">Personalized Options</div>
             </div>
             <div className="text-center">
-              <Clock className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+              <Clock className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
               <div className="font-bold">Fast Turnaround</div>
               <div className="text-sm text-gray-600">5-10 Days</div>
             </div>
@@ -351,7 +351,7 @@ const WeddingStationeryCatalogue = () => {
               <div className="p-5">
                 {/* Category */}
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-medium px-3 py-1 bg-purple-100 text-purple-700 rounded-full">
+                  <span className="text-xs font-medium px-3 py-1 bg-yellow-100 text-gray-700 rounded-full">
                     {categories.find(c => c.id === product.category)?.name}
                   </span>
                   <div className="flex items-center gap-1">
@@ -418,7 +418,7 @@ const WeddingStationeryCatalogue = () => {
         )}
 
         {/* Bulk Order CTA */}
-        <div className="mt-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 bg-gradient-to-br from-luxury-blush rounded-2xl p-8 text-center text-black">
           <h2 className="text-2xl font-bold mb-4">Need a Custom Package?</h2>
           <p className="mb-6 max-w-2xl mx-auto opacity-90">
             Tell us your requirements and we'll create a personalized stationery package
@@ -431,7 +431,7 @@ const WeddingStationeryCatalogue = () => {
               );
               window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
             }}
-            className="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors inline-flex items-center gap-3"
+            className="bg-white text-yellow-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors inline-flex items-center gap-3"
           >
             <MessageCircle className="w-6 h-6" />
             Chat for Custom Package

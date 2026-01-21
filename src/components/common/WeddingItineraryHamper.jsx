@@ -19,7 +19,7 @@ const WeddingItineraryHamper = () => {
   const [selectedItinerary, setSelectedItinerary] = useState([]);
   const [selectedHampers, setSelectedHampers] = useState([]);
 
-  const whatsappNumber = "923001234567";
+  const whatsappNumber = "918120461118";
 
   // Itinerary Templates
   const itineraryTemplates = [
@@ -161,7 +161,7 @@ const WeddingItineraryHamper = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+      <div className="bg-gradient-to-br from-luxury-blush  text-black py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-3 mb-4">
             <Calendar className="w-8 h-8" />
