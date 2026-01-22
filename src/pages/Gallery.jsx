@@ -6,6 +6,7 @@ import { config } from '../config/config';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  
   const [filter, setFilter] = useState('All');
 
   const categories = ['All', ...new Set(galleryImages.map(img => img.category))];

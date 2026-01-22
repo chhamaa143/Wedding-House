@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: "Wedding Stationary", path: "/weddingstationary" },
     { name: "Wedding Hamper", path: "/wedhamper" },
     { name: "Digital Invitations", path: "/e-invitations" },
+    { name: "Shagun Envelopes ", path: "/envelopes" },
     { name: "Social Videos", path: "/videos" },
     { name: "Collection Gallery", path: "/gallery" },
     { name: "About", path: "/about" },
@@ -68,7 +69,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center ml-10 gap-2 px-4 py-1 bg-gradient-to-r from-luxury-gold to-luxury-rosegold text-white rounded-full hover:shadow-lg transition-all"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-8 h-8" />
                 <span>Order Now</span>
               </a>
             </div>

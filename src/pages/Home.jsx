@@ -18,28 +18,28 @@ const Home = () => {
       id: 1,
       title: "Royal Gold & Maroon Collection",
       description: "Traditional wedding cards with intricate gold foil embossing",
-      image: "https://images.unsplash.com/photo-1721176487015-5408ae0e9bc2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8",
+      image: "/images/gallery/Home.png",
       color: "from-luxury-gold/20 to-luxury-navy/20"
     },
     {
       id: 2,
       title: "Modern Minimalist Invitations",
       description: "Clean, elegant designs for contemporary celebrations",
-      image: "https://images.unsplash.com/photo-1721176487015-5408ae0e9bc2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8",
+      image: "/images/gallery/2.png",
       color: "from-luxury-blush/20 to-luxury-rosegold/20"
     },
     {
       id: 3,
       title: "Floral & Botanical Theme",
       description: "Nature-inspired designs with delicate floral patterns",
-      image: "https://images.unsplash.com/photo-1599366284279-0a4ecb93ebc9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMxfHx8ZW58MHx8fHx8",
+      image: "/images/gallery/8.png ",
       color: "from-luxury-champagne/20 to-luxury-rosegold/20"
     },
     {
       id: 4,
       title: "Destination Wedding Series",
       description: "Exotic designs for beach and destination weddings",
-      image: "https://images.unsplash.com/photo-1731814585963-80f1c3ae01d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDYwfHx8ZW58MHx8fHx8",
+      image: "/images/gallery/4.png",
       color: "from-luxury-navy/20 to-luxury-gold/20"
     }
   ];
@@ -63,7 +63,7 @@ const Home = () => {
   return (
     <div>
       {/* Carousel Section - Added at the top */}
-      <section className="relative h-[50vh] overflow-hidden">
+      <section className="relative h-[60vh] overflow-hidden">
         {carouselImages.map((slide, index) => (
           <div
             key={slide.id}
