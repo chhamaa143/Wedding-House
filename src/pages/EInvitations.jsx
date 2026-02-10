@@ -186,7 +186,7 @@ const EInvitations = () => {
               <div key={video.id} className="bg-white rounded-xl shadow p-4">
                 <div className="aspect-video mb-4">
                   <iframe
-                    className="w-full h-full rounded-lg"
+                    className="w-full h-full rounded-lg"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
                     src={video.src}
                     title={video.title}
                     frameBorder="0"

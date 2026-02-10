@@ -43,7 +43,7 @@ const ProductCard = ({ product }) => {
           </span>
         </div>
 
-        {/* Product Info */}
+        {/* Product Info */} 
         <div className="p-6">
           <div className="flex justify-between items-start mb-2">
             <h3 className="text-xl font-serif font-semibold text-gray-900">

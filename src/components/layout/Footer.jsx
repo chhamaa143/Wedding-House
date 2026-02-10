@@ -43,7 +43,7 @@ const Footer = () => {
               </a>
               {/* <a
                 href={config.social.pinterest}
-                target="_blank"
+                target="_blank"  
                 rel="noopener noreferrer"
                 className="hover:text-luxurty-gold"
               >
