@@ -63,8 +63,7 @@ export const products = [
     name: "Riwaaz Wed Card",
     category: "Destination",
     price: "₹110 Per Card",
-    description:
-      "wedding invitations with premium print quality.",
+    description: "wedding invitations with premium print quality.",
     fullDescription:
       "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
     features: [
@@ -89,8 +88,7 @@ export const products = [
     name: "Royal Vows",
     category: "Dream Wedding Card",
     price: "₹110 Per Card",
-    description:
-      "Custom wedding cards that reflect your love story in style.",
+    description: "Custom wedding cards that reflect your love story in style.",
     fullDescription:
       "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
     features: [
@@ -116,8 +114,7 @@ export const products = [
     name: "Farman Card",
     category: "Farman Card",
     price: "₹149 er Card",
-    description:
-      "Timeless wedding invitation designs with a modern touch.",
+    description: "Timeless wedding invitation designs with a modern touch.",
     fullDescription:
       "Announce your big day with elegance and tradition through our Farman Wedding Card A4 Size – a regal scroll-style invitation that adds a royal touch to your wedding,Inspired by royal proclamations, this card is designed to impress and express your cultural heritage in the most luxurious way.",
     features: [
@@ -142,8 +139,7 @@ export const products = [
     name: "Royal Wedding Card",
     category: "Royal Card",
     price: "₹220 Per Card",
-    description:
-      "Luxury wedding cards printed with precision and elegance.",
+    description: "Luxury wedding cards printed with precision and elegance.",
     fullDescription:
       "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
     features: [
@@ -247,13 +243,13 @@ export const products = [
   },
   {
     id: 10,
-    name: "Premium God Foil Card",
-    category: "Gold Foil",
-    price: "₹1,999 - ₹3,499",
+    name: "Legend Wed Card",
+    category: "Luxury",
+    price: "₹450 Per Card",
     description:
-      "Capture the essence of exotic locations with thematic designs.",
+      "Exquisite wedding invitation designs made to cherish forever.",
     fullDescription:
-      "Inspired by exotic destinations from Bali to Tuscany. Each design tells a story with thematic elements and textured papers.",
+      "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
     features: [
       "Thematic Designs",
       "Textured Papers",
@@ -261,10 +257,143 @@ export const products = [
       "Luxury Packaging",
     ],
     images: [
-      placeholderImages.products["Gold Foil-1"],
-      placeholderImages.products["Gold Foil-2"],
-      placeholderImages.products["Gold Foil-3"],
-      placeholderImages.products["Gold Foil-4"],
+      placeholderImages.products["Legend-1"],
+      placeholderImages.products["Legend-2"],
+      placeholderImages.products["Legend-3"],
+      placeholderImages.products["Legend-4"],
+    ],
+    pdfPreview:
+      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    customization: ["Destination Theme", "Language Options", "Custom Maps"],
+    deliveryTime: "10-14 business days",
+    tags: ["destination", "luxury", "thematic"],
+  },
+  {
+    id: 11,
+    name: "Emboss Card",
+    category: "Luxury",
+    price: "₹480 Per Card",
+    description:
+      "Exquisite wedding invitation designs made to cherish forever.",
+    fullDescription:
+      "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
+    features: [
+      "Thematic Designs",
+      "Textured Papers",
+      "Spot UV Coating",
+      "Luxury Packaging",
+    ],
+    images: [
+      placeholderImages.products["emboss-1"],
+      placeholderImages.products["emboss-2"],
+      placeholderImages.products["emboss-3"],
+    ],
+    pdfPreview:
+      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    customization: ["Destination Theme", "Language Options", "Custom Maps"],
+    deliveryTime: "10-14 business days",
+    tags: ["destination", "luxury", "thematic"],
+  },
+  {
+    id: 12,
+    name: "Natural Wed Card",
+    category: "Premium",
+    price: "₹265 Per Card",
+    description:
+      "Exquisite wedding invitation designs made to cherish forever.",
+    fullDescription:
+      "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
+    features: [
+      "Thematic Designs",
+      "Textured Papers",
+      "Spot UV Coating",
+      "Luxury Packaging",
+    ],
+    images: [
+      placeholderImages.products["natural-1"],
+      placeholderImages.products["natural-2"],
+      placeholderImages.products["natural-3"],
+      placeholderImages.products["natural-4"],
+    ],
+    pdfPreview:
+      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    customization: ["Destination Theme", "Language Options", "Custom Maps"],
+    deliveryTime: "10-14 business days",
+    tags: ["destination", "luxury", "thematic"],
+  },
+  {
+    id: 13,
+    name: "Luxury Wed Card",
+    category: "Luxury",
+    price: "₹255 Per Card",
+    description:
+      "Exquisite wedding invitation designs made to cherish forever.",
+    fullDescription:
+      "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
+    features: [
+      "Thematic Designs",
+      "Textured Papers",
+      "Spot UV Coating",
+      "Luxury Packaging",
+    ],
+    images: [
+      placeholderImages.products["luxury-1"],
+      placeholderImages.products["luxury-2"],
+      placeholderImages.products["luxury-3"],
+      placeholderImages.products["luxury-4"],
+    ],
+    pdfPreview:
+      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    customization: ["Destination Theme", "Language Options", "Custom Maps"],
+    deliveryTime: "10-14 business days",
+    tags: ["destination", "luxury", "thematic"],
+  },
+  {
+    id: 14,
+    name: "Premium Wed Card",
+    category: "Premium",
+    price: "450 Per Card",
+    description:
+      "Exquisite wedding invitation designs made to cherish forever.",
+    fullDescription:
+      "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
+    features: [
+      "Thematic Designs",
+      "Textured Papers",
+      "Spot UV Coating",
+      "Luxury Packaging",
+    ],
+    images: [
+      placeholderImages.products["premium-1"],
+      placeholderImages.products["premium-2"],
+      placeholderImages.products["premium-3"],
+      placeholderImages.products["premium-4"],
+    ],
+    pdfPreview:
+      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    customization: ["Destination Theme", "Language Options", "Custom Maps"],
+    deliveryTime: "10-14 business days",
+    tags: ["destination", "luxury", "thematic"],
+  },
+  {
+    id: 15,
+    name: "Silver Effect Wed Card",
+    category: "Classic",
+    price: "₹480 Per Card",
+    description:
+      "Exquisite wedding invitation designs made to cherish forever.",
+    fullDescription:
+      "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
+    features: [
+      "Thematic Designs",
+      "Textured Papers",
+      "Spot UV Coating",
+      "Luxury Packaging",
+    ],
+    images: [
+      placeholderImages.products["silver-1"],
+      placeholderImages.products["silver-2"],
+      placeholderImages.products["silver-3"],
     ],
     pdfPreview:
       "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
