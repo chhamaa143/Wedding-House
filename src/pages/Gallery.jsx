@@ -1,18 +1,22 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Maximize2 } from 'lucide-react';
-import { galleryImages } from '../config/data';
-import { config } from '../config/config';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Maximize2 } from "lucide-react";
+import { galleryImages } from "../config/data";
+import { config } from "../config/config";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  
-  const [filter, setFilter] = useState('All');
 
-  const categories = ['All', ...new Set(galleryImages.map(img => img.category))];
-  const filteredImages = filter === 'All' 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === filter);
+  const [filter, setFilter] = useState("All");
+
+  const categories = [
+    "All",
+    ...new Set(galleryImages.map((img) => img.category)),
+  ];
+  const filteredImages =
+    filter === "All"
+      ? galleryImages
+      : galleryImages.filter((img) => img.category === filter);
 
   return (
     <div className="min-h-screen bg-white">
@@ -37,14 +41,14 @@ const Gallery = () => {
       <div className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-4">
-            {categories.map(category => (
+            {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setFilter(category)}
                 className={`px-6 py-2 rounded-full ${
                   filter === category
-                    ? 'bg-gradient-to-r from-luxury-gold to-luxury-rosegold text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    ? "bg-gradient-to-r from-luxury-gold to-luxury-rosegold text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
                 {category}
@@ -101,13 +105,13 @@ const Gallery = () => {
             >
               <X className="w-6 h-6 text-white" />
             </button>
-            
+
             <motion.div
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
               className="relative max-w-4xl max-h-[90vh]"
-              onClick={e => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={selectedImage.src}
@@ -118,7 +122,9 @@ const Gallery = () => {
                 <div className="flex justify-between items-start">
                   <div>
                     <p className="text-xl font-serif">{selectedImage.alt}</p>
-                    <span className="text-gray-300">{selectedImage.category} Collection</span>
+                    <span className="text-gray-300">
+                      {selectedImage.category} Collection
+                    </span>
                   </div>
                   <a
                     href={`https://wa.me/${config.whatsapp.number}?text=${encodeURIComponent(`Hello, I'm interested in this design: ${selectedImage.alt}`)}`}

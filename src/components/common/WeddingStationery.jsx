@@ -21,17 +21,47 @@ const WeddingStationeryCatalogue = () => {
 
   // WhatsApp Configuration
   const whatsappNumber = "8120461118"; // Replace with your number
-  const whatsappMessage = (item) => 
+  const whatsappMessage = (item) =>
     `Hello! I'm interested in ordering:\n\n📦 *${item.name}*\n💰 Price: ${item.price}\n📋 Category: ${item.category}\n\nPlease send me more details and let me know how to proceed with ordering.`;
 
   // Stationery Categories
   const categories = [
-    { id: "invitations", name: "Wedding Invitations", icon: "💌", color: "from-pink-500 to-rose-500" },
-    { id: "programs", name: "Ceremony Programs", icon: "📜", color: "from-blue-500 to-cyan-500" },
-    { id: "menus", name: "Menu & Place Cards", icon: "🍽️", color: "from-emerald-500 to-green-500" },
-    { id: "favors", name: "Thank You Favors", icon: "🎁", color: "from-purple-500 to-violet-500" },
-    { id: "accessories", name: "Accessories", icon: "🎀", color: "from-amber-500 to-orange-500" },
-    { id: "combo", name: "Complete Packages", icon: "📦", color: "from-red-500 to-pink-500" },
+    {
+      id: "invitations",
+      name: "Wedding Invitations",
+      icon: "💌",
+      color: "from-pink-500 to-rose-500",
+    },
+    {
+      id: "programs",
+      name: "Shagun Envelopes",
+      icon: "📜",
+      color: "from-blue-500 to-cyan-500",
+    },
+    {
+      id: "menus",
+      name: "Menu & Place Cards",
+      icon: "🍽️",
+      color: "from-emerald-500 to-green-500",
+    },
+    {
+      id: "favors",
+      name: "Thank You Cards",
+      icon: "🎁",
+      color: "from-purple-500 to-violet-500",
+    },
+    {
+      id: "accessories",
+      name: "Itinery",
+      icon: "🎀",
+      color: "from-amber-500 to-orange-500",
+    },
+    {
+      id: "combo",
+      name: "Complete Packages",
+      icon: "📦",
+      color: "from-red-500 to-pink-500",
+    },
   ];
 
   // Stationery Products with actual images
@@ -39,51 +69,48 @@ const WeddingStationeryCatalogue = () => {
     // INVITATIONS
     {
       id: 1,
-      name: "Royal Gold Foil Invitation",
+      name: "Classic Wedding Card",
       category: "invitations",
-      price: "₹1,299",
-      description: "24K gold foil embossing on premium cardstock",
+      price: "₹230 Per Card",
+      description: "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
       image: "/images/products/classic-card (1).png",
       tags: ["Premium", "Gold Foil", "Traditional"],
-      delivery: "7-10 days",
+      delivery: "2-3 days",
       rating: 4.8,
-     
     },
     {
       id: 2,
-      name: "Modern Laser Cut Design",
+      name: "Premium Wed Card",
       category: "invitations",
-      price: "₹899",
-      description: "Contemporary laser-cut patterns with matte finish",
-      image: "/images/products/farman-wed-card (3).png",
+      price: "₹450 Per Card",
+      description: "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
+      image: "/images/products/premium (3).webp",
       tags: ["Modern", "Laser Cut", "Minimalist"],
-      delivery: "5-7 days",
+      delivery: "2-5 days",
       rating: 4.5,
-    
     },
     {
       id: 3,
-      name: "Farman Nikah Card Set",
+      name: "Gold Effected Wedding Card",
       category: "invitations",
-      price: "₹1,499",
-      description: "Elegant Arabic calligraphy with pearl embellishments",
+      price: "₹480 Per Card",
+      description: "Celebrate love with our exquisitely designed wedding cards, crafted to reflect your unique journey. Whether you prefer traditional elegance or modern minimalism, our collection offers a wide range of customizable designs to suit every wedding theme.",
       image: "/images/products/gold-Foil (4).png",
       tags: ["Islamic", "Arabic", "Premium"],
-      delivery: "7-10 days",
+      delivery: "3-4 days",
       rating: 4.9,
-   
     },
 
     // PROGRAMS
     {
       id: 4,
       name: "Ceremony Program Booklet",
-      category: "programs",
+      category: "Itinery",
       price: "₹799",
       description: "Detailed wedding ceremony timeline and information",
       image: "/images/products/Royal (2).png",
       tags: ["Booklet", "Bilingual", "Informative"],
-      delivery: "7-10 days",
+      delivery: "3-5 days",
       rating: 4.6,
     },
     {
@@ -134,7 +161,6 @@ const WeddingStationeryCatalogue = () => {
     //   delivery: "7-10 days",
     //   rating: 4.5,
     // },
-  
 
     // ACCESSORIES
     // {
@@ -187,32 +213,35 @@ const WeddingStationeryCatalogue = () => {
   ];
 
   // Filter products
-  const filteredProducts = selectedCategory === "all" 
-    ? stationeryProducts 
-    : stationeryProducts.filter(product => product.category === selectedCategory);
+  const filteredProducts =
+    selectedCategory === "all"
+      ? stationeryProducts
+      : stationeryProducts.filter(
+          (product) => product.category === selectedCategory,
+        );
 
   const handleWhatsAppOrder = (product) => {
     const message = encodeURIComponent(whatsappMessage(product));
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
 
   const handleBulkOrder = () => {
     if (selectedItems.length === 0) return;
-    
-    const itemsList = selectedItems.map(item => 
-      `• ${item.name} - ${item.price}`
-    ).join('\n');
-    
+
+    const itemsList = selectedItems
+      .map((item) => `• ${item.name} - ${item.price}`)
+      .join("\n");
+
     const total = selectedItems.reduce((sum, item) => {
-      const price = parseInt(item.price.replace(/[^0-9]/g, ''));
+      const price = parseInt(item.price.replace(/[^0-9]/g, ""));
       return sum + price;
     }, 0);
-    
+
     const message = encodeURIComponent(
-      `Hello! I would like to order the following items:\n\n${itemsList}\n\n💰 Total: ₹${total}\n\nPlease create a custom package for me with these items.`
+      `Hello! I would like to order the following items:\n\n${itemsList}\n\n💰 Total: ₹${total}\n\nPlease create a custom package for me with these items.`,
     );
-    
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
 
   return (
@@ -224,9 +253,9 @@ const WeddingStationeryCatalogue = () => {
             Complete Wedding Stationery Collection
           </h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto mb-8">
-            Everything you need for your perfect wedding - from invitations to thank you cards
+            Everything you need for your perfect wedding - from invitations to
+            thank you cards
           </p>
-       
         </div>
       </div>
 
@@ -236,11 +265,11 @@ const WeddingStationeryCatalogue = () => {
           <div className="flex flex-wrap gap-2 justify-center">
             <button
               onClick={() => setSelectedCategory("all")}
-              className={`px-6 py-3 rounded-full font-medium transition-all ${selectedCategory === "all" ? "bg-gradient-to-r from-luxury-gold to-luxury-rosegold text-white" : "bg-gray-100 hover:bg-gray-200" }`}
+              className={`px-6 py-3 rounded-full font-medium transition-all ${selectedCategory === "all" ? "bg-gradient-to-r from-luxury-gold to-luxury-rosegold text-white" : "bg-gray-100 hover:bg-gray-200"}`}
             >
               All Items
             </button>
-            {categories.map(cat => (
+            {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
@@ -293,8 +322,9 @@ const WeddingStationeryCatalogue = () => {
                   {selectedItems.length} items selected
                 </div>
                 <div className="text-gray-600">
-                  Total: ₹{selectedItems.reduce((sum, item) => {
-                    const price = parseInt(item.price.replace(/[^0-9]/g, ''));
+                  Total: ₹
+                  {selectedItems.reduce((sum, item) => {
+                    const price = parseInt(item.price.replace(/[^0-9]/g, ""));
                     return sum + price;
                   }, 0)}
                 </div>
@@ -312,7 +342,7 @@ const WeddingStationeryCatalogue = () => {
 
         {/* Products */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredProducts.map(product => (
+          {filteredProducts.map((product) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 20 }}
@@ -334,13 +364,19 @@ const WeddingStationeryCatalogue = () => {
                 <div className="absolute top-3 right-3">
                   <button
                     onClick={() => {
-                      if (selectedItems.find(item => item.id === product.id)) {
-                        setSelectedItems(selectedItems.filter(item => item.id !== product.id));
+                      if (
+                        selectedItems.find((item) => item.id === product.id)
+                      ) {
+                        setSelectedItems(
+                          selectedItems.filter(
+                            (item) => item.id !== product.id,
+                          ),
+                        );
                       } else {
                         setSelectedItems([...selectedItems, product]);
                       }
                     }}
-                    className={`p-2 rounded-full ${selectedItems.find(item => item.id === product.id) ? 'bg-green-500 text-white' : 'bg-white/90 text-gray-700 hover:bg-purple-500 hover:text-white'}`}
+                    className={`p-2 rounded-full ${selectedItems.find((item) => item.id === product.id) ? "bg-green-500 text-white" : "bg-white/90 text-gray-700 hover:bg-purple-500 hover:text-white"}`}
                   >
                     <ShoppingBag className="w-5 h-5" />
                   </button>
@@ -352,11 +388,13 @@ const WeddingStationeryCatalogue = () => {
                 {/* Category */}
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-medium px-3 py-1 bg-yellow-100 text-gray-700 rounded-full">
-                    {categories.find(c => c.id === product.category)?.name}
+                    {categories.find((c) => c.id === product.category)?.name}
                   </span>
                   <div className="flex items-center gap-1">
                     <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                    <span className="text-sm font-medium">{product.rating}</span>
+                    <span className="text-sm font-medium">
+                      {product.rating}
+                    </span>
                   </div>
                 </div>
 
@@ -370,7 +408,7 @@ const WeddingStationeryCatalogue = () => {
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1 mb-4">
-                  {product.tags.map(tag => (
+                  {product.tags.map((tag) => (
                     <span
                       key={tag}
                       className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded"
@@ -411,9 +449,7 @@ const WeddingStationeryCatalogue = () => {
             <h3 className="text-xl font-semibold text-gray-700 mb-2">
               No products found in this category
             </h3>
-            <p className="text-gray-500">
-              Try selecting a different category
-            </p>
+            <p className="text-gray-500">Try selecting a different category</p>
           </div>
         )}
 
@@ -421,15 +457,18 @@ const WeddingStationeryCatalogue = () => {
         <div className="mt-16 bg-gradient-to-br from-luxury-blush rounded-2xl p-8 text-center text-black">
           <h2 className="text-2xl font-bold mb-4">Need a Custom Package?</h2>
           <p className="mb-6 max-w-2xl mx-auto opacity-90">
-            Tell us your requirements and we'll create a personalized stationery package
-            just for your wedding
+            Tell us your requirements and we'll create a personalized stationery
+            package just for your wedding
           </p>
           <button
             onClick={() => {
               const message = encodeURIComponent(
-                "Hello! I need help creating a custom wedding stationery package. Can you help me with this?"
+                "Hello! I need help creating a custom wedding stationery package. Can you help me with this?",
               );
-              window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+              window.open(
+                `https://wa.me/${whatsappNumber}?text=${message}`,
+                "_blank",
+              );
             }}
             className=" bg-gradient-to-r from-luxury-gold to-luxury-rosegold text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-colors inline-flex items-center gap-3"
           >

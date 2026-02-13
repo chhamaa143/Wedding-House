@@ -57,28 +57,34 @@ const About = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}  
+              viewport={{ once: true }}
             >
               <h2 className="text-3xl font-serif font-bold text-luxury-navy mb-6">
                 From Passion to Perfection
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Wedding House is a trusted one-stop solution for comprehensive
-                  printing services, offering end-to-end support for all your
-                  digital design and printing needs. We are known for our wide
-                  range of customized printing services that cater to both
-                  personal and corporate requirements.
+                  Your Wedding House is a complete wedding invitation and
+                  stationery design & printing studio dedicated to making your
+                  special day memorable and elegant. We specialize in customized
+                  wedding cards, premium stationery, and complete wedding
+                  branding solutions tailored to every couple’s style,
+                  tradition, and budget. From traditional Indian wedding
+                  invitations to modern minimalist and luxury designs, our team
+                  carefully understands your requirements and converts your
+                  ideas into beautiful printed creations. We provide end-to-end
+                  services including concept design, digital invitations,
+                  printing, finishing, and packaging so that you can focus on
+                  enjoying your celebration while we take care of the details.
                 </p>
                 <p>
-                  We deliver high-quality printed products at affordable prices,
-                  ensuring complete satisfaction through exceptional product
-                  quality, smooth design experience, and reliable services. With
-                  20 years of industry expertise, we have been proudly
-                  operating, powered by Jin Print PVT LTD, contributing 12 years
-                  of strong experience in the design and printing industry. We
-                  also specialize in customizing premium corporate kits for our
-                  valued clients.
+                  Our mission is to offer high-quality printing, creative
+                  designs, and reliable service at reasonable pricing. Using
+                  premium materials, advanced printing techniques, and personal
+                  support, we ensure each invitation reflects the emotion,
+                  culture, and uniqueness of your wedding. At Your Wedding
+                  House, we don’t just print cards — we help you announce your
+                  new beginning with style and perfection.
                 </p>
                 {/* <p>
                   Today, we combine traditional craftsmanship with modern technology to create stationery 
@@ -95,7 +101,7 @@ const About = () => {
             >
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1656104717095-9d062b0d4e8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VkZGluZyUyMGludml0YXRpb258ZW58MHx8MHx8fDA%3D"
+                  src="\images\gallery\about.png"
                   alt="Our Studio"
                   className="w-full h-full object-cover"
                 />
@@ -225,7 +231,7 @@ const About = () => {
             href={`https://wa.me/${
               config.whatsapp.number
             }?text=${encodeURIComponent(
-              "Hello, I would like to discuss my wedding stationery needs."
+              "Hello, I would like to discuss my wedding stationery needs.",
             )}`}
             target="_blank"
             rel="noopener noreferrer"

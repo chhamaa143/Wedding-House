@@ -80,6 +80,14 @@ export const placeholderImages = {
     "gallery-6": "/images/products/gold-Foil (4).png",
     "gallery-7": "/images/products/classic-card (4).png",
     "gallery-8": "/images/products/Wed-Card-2 (20).png",
+    "gallery-9": "/images/products/legend (1).png",
+    "gallery-10": "/images/products/farman-wed-card (6).png",
+    "gallery-11": "/images/products/gold-Foil (4).png",
+    "gallery-12": "/images/products/silver-effect (3).png",
+    "gallery-13": "/images/products/premium (2).webp",
+    "gallery-14": "/images/products/legend (4).png",
+    "gallery-15": "/images/products/emboss (1).webp",
+
   },
   videos: {
     "royal-thumb":

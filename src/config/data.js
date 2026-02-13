@@ -23,7 +23,7 @@ export const products = [
       placeholderImages.products["royal-blossom-4"],
     ],
     pdfPreview:
-      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      "/pdfs/Wedding_House_Brochure_Proper.pdf",
     customization: [
       "Text Personalization",
       "Color Variations",
@@ -452,6 +452,44 @@ export const galleryImages = [
     alt: "Beach Wedding Invitation",
     category: "Destination",
   },
+    {
+    id: 9,
+    src: placeholderImages.gallery["gallery-9"],
+    alt: "Beach Wedding Invitation",
+    category: "Destination",
+  },
+   {
+    id: 10,
+    src: placeholderImages.gallery["gallery-10"],
+    alt: "Beach Wedding Invitation",
+    category: "Destination",
+  },
+   {
+    id: 11,
+    src: placeholderImages.gallery["gallery-11"],
+    alt: "Handcrafted Floral Design",
+    category: "Traditional",
+  }, {
+    id: 12,
+    src: placeholderImages.gallery["gallery-12"],
+    alt: "Handcrafted Floral Design",
+    category: "Traditional",
+  }, {
+    id: 13,
+    src: placeholderImages.gallery["gallery-13"],
+    alt: "Handcrafted Floral Design",
+    category: "Traditional",
+  }, {
+    id: 14,
+    src: placeholderImages.gallery["gallery-14"],
+    alt: "Handcrafted Floral Design",
+    category: "Traditional",
+  }, {
+    id: 15,
+    src: placeholderImages.gallery["gallery-15"],
+    alt: "Handcrafted Floral Design",
+    category: "Traditional",
+  },
 ];
 
 export const videos = [
@@ -489,6 +527,27 @@ export const videos = [
     id: 6,
     title: "Custom Design Journey",
     src: "https://www.youtube.com/embed/lB1o68EGHQg",
+    thumbnail: placeholderImages.videos["design-thumb"],
+  },
+   {
+    id: 7,
+    title: "Custom Design Journey",
+    src: "https://www.youtube.com/embed/fzMlFPFN_6w ",
+    thumbnail: placeholderImages.videos["design-thumb"],
+  }, {
+    id: 8,
+    title: "Custom Design Journey",
+    src: "https://www.youtube.com/embed/yC1sltXSak8",
+    thumbnail: placeholderImages.videos["design-thumb"],
+  }, {
+    id: 9,
+    title: "Custom Design Journey",
+    src: "https://www.youtube.com/embed/4_b21jdkqzg",
+    thumbnail: placeholderImages.videos["design-thumb"],
+  }, {
+    id: 10,
+    title: "Custom Design Journey",
+    src: "https://www.youtube.com/embed/vEGTYHYikSU",
     thumbnail: placeholderImages.videos["design-thumb"],
   },
 ];
