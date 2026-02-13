@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "", path: "/" },
     { name: "Wedding Cards", path: "/products" },
     { name: "Wedding Stationary", path: "/weddingstationary" },
-    { name: "Wedding Hamper", path: "/wedhamper" },
+    // { name: "Wedding Hamper", path: "/wedhamper" },
     { name: "Digital Invitations", path: "/e-invitations" },
     { name: "Shagun Envelopes ", path: "/envelopes" },
     { name: "Social Videos", path: "/videos" },
