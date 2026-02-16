@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-14 h-12 flex items-center justify-center">
+              <div className="w-20 h-40 flex items-center justify-center">
                 <span className="text-xl font-serif font-bold">
                   <img src="images/gallery/logo.png" alt="" />
                 </span>

@@ -75,7 +75,6 @@ const ProductDetail = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
             {/* Thumbnail Images */}
             <div className="flex gap-4 overflow-x-auto pb-2">
               {product.images.map((image, index) => (

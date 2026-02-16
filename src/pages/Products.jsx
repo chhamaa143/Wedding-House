@@ -25,6 +25,7 @@ const Products = () => {
     if (selectedCategory !== "All") {
       filtered = filtered.filter(
         (product) => product.category === selectedCategory,
+        
       );
     }
 
