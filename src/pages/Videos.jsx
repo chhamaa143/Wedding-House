@@ -164,7 +164,7 @@ const Videos = () => {
                   href="https://www.instagram.com/print.karao/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full hover:shadow-lg transition-shadow"
+                  className="px-6 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-white rounded-full hover:shadow-lg transition-shadow"
                 >
                   Follow on Instagram
                 </a>

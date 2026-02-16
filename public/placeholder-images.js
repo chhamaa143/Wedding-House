@@ -66,11 +66,11 @@ export const placeholderImages = {
     "premium-3": "/images/products/premium (3).webp",
     "premium-4": "/images/products/premium (1).webp",
 
-        "silver-1": "/images/products/silver-effect (1).png",
+    "silver-1": "/images/products/silver-effect (1).png",
     "silver-2": "/images/products/silver-effect (2).png",
     "silver-3": "/images/products/silver-effect (3).png",
   },
-  
+
   gallery: {
     "gallery-1": "/images/products/Sunehri Shaad-L-09 (4).png",
     "gallery-2": "/images/products/vivah-sutra (4).png",
@@ -87,7 +87,6 @@ export const placeholderImages = {
     "gallery-13": "/images/products/premium (2).webp",
     "gallery-14": "/images/products/legend (4).png",
     "gallery-15": "/images/products/emboss (1).webp",
-
   },
   videos: {
     "royal-thumb":

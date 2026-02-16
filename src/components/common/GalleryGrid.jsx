@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Maximize2 } from 'lucide-react';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Maximize2 } from "lucide-react";
 
 const GalleryGrid = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -16,7 +16,7 @@ const GalleryGrid = ({ images }) => {
             transition={{ delay: index * 0.05 }}
             className="mb-8 break-inside-avoid"
           >
-            <div 
+            <div
               className="relative group cursor-pointer overflow-hidden rounded-2xl bg-gray-100"
               onClick={() => setSelectedImage(image)}
             >
@@ -45,7 +45,7 @@ const GalleryGrid = ({ images }) => {
 
       {/* Lightbox */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
           onClick={() => setSelectedImage(null)}
         >

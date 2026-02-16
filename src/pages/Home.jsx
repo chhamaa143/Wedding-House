@@ -18,7 +18,7 @@ const Home = () => {
       id: 1,
       title: "Royal Gold & Maroon Collection",
       description: "Traditional wedding cards with intricate gold foil embossing",
-      image: "/images/gallery/size.png",
+      image: "/images/gallery/01.jpg.jpeg",
       color: "from-luxury-gold/20 to-luxury-navy/20"
     },
     {

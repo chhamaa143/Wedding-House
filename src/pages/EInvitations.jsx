@@ -110,7 +110,7 @@ const EInvitations = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-pink-50 to-purple-50 py-20 text-center">
+      <div className="bg-gradient-to-r from-pink-50 to-yellow-50 py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-luxury-navy mb-6">
           Digital E-Invitations
         </h1>

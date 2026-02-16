@@ -48,7 +48,7 @@ const WeddingStationeryCatalogue = () => {
       id: "favors",
       name: "Thank You Cards",
       icon: "🎁",
-      color: "from-purple-500 to-violet-500",
+      color: "from-yellow-500 to-violet-500",
     },
     {
       id: "accessories",
@@ -376,7 +376,7 @@ const WeddingStationeryCatalogue = () => {
                         setSelectedItems([...selectedItems, product]);
                       }
                     }}
-                    className={`p-2 rounded-full ${selectedItems.find((item) => item.id === product.id) ? "bg-green-500 text-white" : "bg-white/90 text-gray-700 hover:bg-purple-500 hover:text-white"}`}
+                    className={`p-2 rounded-full ${selectedItems.find((item) => item.id === product.id) ? "bg-green-500 text-white" : "bg-white/90 text-gray-700 hover:bg-yellow-500 hover:text-white"}`}
                   >
                     <ShoppingBag className="w-5 h-5" />
                   </button>
