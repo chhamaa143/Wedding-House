@@ -934,7 +934,7 @@ const WeddingCardItineraryHamper = () => {
 
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-luxury-navy mb-6">
             Wedding Card & Itinerary
-            <span className="block text-amber-300">Premium Hamper Service</span>
+            {/* <span className="block text-amber-300">Premium Hamper Service</span> */}
           </h1>
 
           <p className="text-xl opacity-90 max-w-3xl mx-auto mb-8">
