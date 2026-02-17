@@ -749,7 +749,7 @@ const WeddingCardItineraryHamper = () => {
                       View Details <ChevronRight className="w-4 h-4" />
                     </span>
                     <span className="text-sm bg-gray-100 px-2 py-1 rounded-full">
-                      ₹{item.price}
+                      {item.price}
                     </span>
                   </div>
                 </div>

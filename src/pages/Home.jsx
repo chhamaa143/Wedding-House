@@ -18,28 +18,35 @@ const Home = () => {
       id: 1,
       title: "Royal Gold & Maroon Collection",
       description: "Traditional wedding cards with intricate gold foil embossing",
-      image: "/images/gallery/01.jpg.jpeg",
+      image: "/images/gallery/banner1.jpeg",
       color: "from-luxury-gold/20 to-luxury-navy/20"
     },
     {
       id: 2,
       title: "Modern Minimalist Invitations",
       description: "Clean, elegant designs for contemporary celebrations",
-      image: "/images/gallery/2.png",
+      image: "/images/gallery/banner2.jpeg",
       color: "from-luxury-blush/20 to-luxury-rosegold/20"
     },
     {
       id: 3,
       title: "Floral & Botanical Theme",
       description: "Nature-inspired designs with delicate floral patterns",
-      image: "/images/gallery/8.png ",
+      image: "/images/gallery/banner3.jpeg",
       color: "from-luxury-champagne/20 to-luxury-rosegold/20"
     },
     {
       id: 4,
       title: "Destination Wedding Series",
       description: "Exotic designs for beach and destination weddings",
-      image: "/images/gallery/4.png",
+      image: "/images/gallery/banner4.jpeg",
+      color: "from-luxury-navy/20 to-luxury-gold/20"
+    },
+      {
+      id: 5,
+      title: "Destination Wedding Series",
+      description: "Exotic designs for beach and destination weddings",
+      image: "/images/gallery/banner5.jpeg",
       color: "from-luxury-navy/20 to-luxury-gold/20"
     }
   ];
