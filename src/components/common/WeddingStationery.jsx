@@ -33,35 +33,35 @@ const WeddingStationeryCatalogue = () => {
       color: "from-pink-500 to-rose-500",
     },
     {
-      id: "programs",
+      id: "Envelopes",
       name: "Shagun Envelopes",
       icon: "📜",
       color: "from-blue-500 to-cyan-500",
     },
     {
-      id: "menus",
-      name: "Menu & Place Cards",
+      id: "Cards & Tags",
+      name: "Cards & Tags",
       icon: "🍽️",
       color: "from-emerald-500 to-green-500",
     },
     {
-      id: "favors",
-      name: "Thank You Cards",
+      id: "Bags & Box",
+      name: "Bags",
       icon: "🎁",
       color: "from-yellow-500 to-violet-500",
     },
     {
-      id: "accessories",
-      name: "Itinery",
+      id: "Wedding Gifts",
+      name: "Gifts",
       icon: "🎀",
       color: "from-amber-500 to-orange-500",
     },
-    {
-      id: "combo",
-      name: "Complete Packages",
-      icon: "📦",
-      color: "from-red-500 to-pink-500",
-    },
+    // {
+    //   id: "combo",
+    //   name: "Complete Packages",
+    //   icon: "📦",
+    //   color: "from-red-500 to-pink-500",
+    // },
   ];
 
   // Stationery Products with actual images
@@ -101,11 +101,10 @@ const WeddingStationeryCatalogue = () => {
       rating: 4.9,
     },
 
-    // PROGRAMS
     {
       id: 4,
       name: "Ceremony Program Booklet",
-      category: "Itinery",
+      category: "invitations",
       price: "₹799",
       description: "Detailed wedding ceremony timeline and information",
       image: "/images/products/Royal (2).png",
@@ -116,7 +115,7 @@ const WeddingStationeryCatalogue = () => {
     {
       id: 5,
       name: "Pocket Wedding Timeline",
-      category: "programs",
+      category: "invitations",
       price: "₹349",
       description: "Compact pocket-sized ceremony schedule",
       image: "/images/products/special-card (4).png",
@@ -125,11 +124,10 @@ const WeddingStationeryCatalogue = () => {
       rating: 4.4,
     },
 
-    // MENUS
     {
       id: 6,
       name: "Gold Foil Menu Cards",
-      category: "menus",
+      category: "invitations",
       price: "₹399",
       description: "Elegant menu cards with gold foil detailing",
       image: "/images/products/vivah-sutra (2).png",
@@ -140,7 +138,7 @@ const WeddingStationeryCatalogue = () => {
     {
       id: 7,
       name: "Place Card Set (50 pcs)",
-      category: "menus",
+      category: "invitations",
       price: "₹1,499",
       description: "Personalized place cards for seating arrangement",
       image: "/images/products/Wed-Card-2 (16).png",
@@ -149,44 +147,54 @@ const WeddingStationeryCatalogue = () => {
       rating: 4.8,
     },
 
-    // FAVORS
-    // {
-    //   id: 8,
-    //   name: "Thank You Card Set (25)",
-    //   category: "favors",
-    //   price: "₹599",
-    //   description: "Matching thank you cards with envelopes",
-    //   image: "/images/stationery/favor-1.jpg",
-    //   tags: ["Matching", "Elegant", "Appreciation"],
-    //   delivery: "7-10 days",
-    //   rating: 4.5,
-    // },
+    // Envelopes
+    {
+      id: 8,
+      name: "Copper Foil Env.",
+      category: "Envelopes",
+      price: "₹80",
+      description: "Celebrate special moments with beautifully designed Shagun envelopes. Perfect for weddings, festivals, ceremonies, and gifting,our custom envelopes add elegance and personal touch to your heartfelt blessings.",
+      image: "/images/products/copperfoil.png",
+      tags: ["Matching", "Elegant", "Appreciation"],
+      delivery: "1-day",
+      rating: 4.5,
+    },
+{
+      id: 9,
+      name: "Silver Foil Env.",
+      category: "Envelopes",
+      price: "₹75",
+      description: "Celebrate special moments with beautifully designed Shagun envelopes. Perfect for weddings, festivals, ceremonies, and gifting,our custom envelopes add elegance and personal touch to your heartfelt blessings.",
+      image: "/images/products/silverfoil.png",
+      tags: ["Matching", "Elegant", "Appreciation"],
+      delivery: "1-day",
+      rating: 4.5,
+    },
+    // Cards & Tags
+    {
+      id: 10,
+      name: "Luggage Tagt",
+      category: "Cards & Tags",
+      price: "₹8 Per PC",
+      description: "Add a unique and personal touch to your wedding with our beautifully crafted ﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿Wedding Luggage Tag Cards With Dori.",
+      image: "/images/products/card.png",
+      tags: ["Seating", "Display", "Elegant"],
+      delivery: "1-2 days",
+      rating: 4.7,
+    },
+    {
+      id: 11,
+      name: "Bottle Tag",
+      category: "Cards & Tags",
+      price: "₹8 per pc",
+      description: "Make your big day unforgettable with our exquisitely designed wedding Bottle Tag",
+      image: "/images/products/bottle-tag.webp",
+      tags: ["Bar", "Drinks", "Modern"],
+      delivery: "1-2 days",
+      rating: 4.3,
+    },
 
-    // ACCESSORIES
-    // {
-    //   id: 10,
-    //   name: "Wedding Seating Chart",
-    //   category: "accessories",
-    //   price: "₹1,199",
-    //   description: "Elegant seating arrangement display",
-    //   image: "/images/stationery/accessory-1.jpg",
-    //   tags: ["Seating", "Display", "Elegant"],
-    //   delivery: "10-14 days",
-    //   rating: 4.7,
-    // },
-    // {
-    //   id: 11,
-    //   name: "Bar Menu Display",
-    //   category: "accessories",
-    //   price: "₹699",
-    //   description: "Stylish bar menu with custom cocktails",
-    //   image: "/images/stationery/accessory-2.jpg",
-    //   tags: ["Bar", "Drinks", "Modern"],
-    //   delivery: "7-10 days",
-    //   rating: 4.3,
-    // },
-
-    // COMBO PACKAGES
+    // Bags
     // {
     //   id: 12,
     //   name: "Complete Luxury Package",
